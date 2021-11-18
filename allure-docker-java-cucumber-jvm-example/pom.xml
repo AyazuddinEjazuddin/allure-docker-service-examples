@@ -65,29 +65,12 @@
                     <target>${java.version}</target>
                 </configuration>
             </plugin>
-<!--             <plugin>
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${maven-surefire-plugin}</version>
-            </plugin> -->
-            <plugin>
-			   <groupId>org.apache.maven.plugins</groupId>
-			   <artifactId>maven-surefire-plugin</artifactId>
-			   <version>${maven-surefire-plugin}</version>
-			   <configuration>
-				 <testFailureIgnore>false</testFailureIgnore>
-				 <argLine>
-				   -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
-				 </argLine>
-			   </configuration>
-			   <dependencies>
-				 <dependency>
-				   <groupId>org.aspectj</groupId>
-				   <artifactId>aspectjweaver</artifactId>
-				   <version>${aspectj.version}</version>
-				 </dependency>
-			   </dependencies>
-                 </plugin>
+            </plugin>
+            
 		<plugin>
 		   <groupId>io.qameta.allure</groupId>
 		   <artifactId>allure-maven</artifactId>
