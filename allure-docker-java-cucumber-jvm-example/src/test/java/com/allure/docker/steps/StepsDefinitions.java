@@ -14,14 +14,18 @@ public class StepsDefinitions {
     public void iEnterOnThePage(String arg1) {
     }
 
-    @Then("^I verify is \"([^\"]*)\"$")
-    public void i_verify_is(String status) throws Throwable {
-        switch(status){
-            case "FAILED":
-                Assert.fail("FAILURE ON PURPOSE");
-                break;
+//     @Then("^I verify is \"([^\"]*)\"$")
+//     public void i_verify_is(String status) throws Throwable {
+//         switch(status){
+//             case "FAILED":
+//                 Assert.fail("FAILURE ON PURPOSE");
+//                 break;
 
-        }
+//         }
+//     }
+    
+    @Then("^I verify is \"([^\"]*)\"$")
+    public void i_verify_is(String status) {
     }
 
 }
