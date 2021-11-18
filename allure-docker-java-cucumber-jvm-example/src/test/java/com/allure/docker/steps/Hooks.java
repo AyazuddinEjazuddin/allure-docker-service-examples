@@ -20,7 +20,7 @@ public class Hooks {
         ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(FileUtils.readFileToByteArray(image));
         Allure.addAttachment("Some Screenshot", byteArrayInputStream);
 
-        File video = new File(pathFile.getPath() + "/" + "google.mp4");
-        Allure.addAttachment("Some video", "video/mp4", Files.asByteSource(video).openStream(), "mp4");
+        //File video = new File(pathFile.getPath() + "/" + "google.mp4");
+        //Allure.addAttachment("Some video", "video/mp4", Files.asByteSource(video).openStream(), "mp4");
     }
 }
