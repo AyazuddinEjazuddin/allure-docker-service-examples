@@ -28,16 +28,6 @@
             <version>${allure-cucumber-jvm.version}</version>
         </dependency>
         <dependency>
-		<groupId>io.qameta.allure</groupId>
-		<artifactId>allure-testng</artifactId>
-		<version>2.13.1</version>
-	</dependency>	
-    <dependency>
-		<groupId>ru.yandex.qatools.allure</groupId>
-		<artifactId>allure-testng-adaptor</artifactId>
-		<version>1.5.4</version>
-    </dependency>
-        <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
             <version>2.6</version>
